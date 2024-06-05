@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" class="display" id="resultado" disabled>
+        <div class="teclas">
+            <button onclick="borrarDisplay()">C</button>
+            <button onclick="teclaDisplay('1')">1</button>
+            <button onclick="teclaDisplay('2')">2</button>
+            <button onclick="teclaDisplay('3')">3</button>
+            <button onclick="teclaDisplay('+')">+</button>
+            <button onclick="teclaDisplay('4')">4</button>
+            <button onclick="teclaDisplay('5')">5</button>
+            <button onclick="teclaDisplay('6')">6</button>
+            <button onclick="teclaDisplay('-')">-</button>
+            <button onclick="teclaDisplay('7')">7</button>
+            <button onclick="teclaDisplay('8')">8</button>
+            <button onclick="teclaDisplay('9')">9</button>
+            <button onclick="teclaDisplay('*')">*</button>
+            <button onclick="teclaDisplay('0')">0</button>
+            <button onclick="teclaDisplay('.')">.</button>
+            <input type="button" value="=" onclick="Calcular()">
+            <button onclick="teclaDisplay('/')">/</button>
+        </div>
+        <footer>Calculadora Digital</footer>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
